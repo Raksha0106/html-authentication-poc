@@ -1,0 +1,30 @@
+/* Background and font */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    margin: 0;
+}
+
+/* Center content */
+.center-box {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card style */
+.custom-card {
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Button style */
+.btn-custom {
+    background-color: #667eea;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #5a67d8;
+}

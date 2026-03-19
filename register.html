@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Register</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="center-box">
+<div class="card p-4 custom-card" style="width:350px;">
+
+<h3 class="text-center mb-3">Create Account</h3>
+
+<div class="mb-3">
+<label>Email</label>
+<input type="email" class="form-control" placeholder="Enter email">
+</div>
+
+<div class="mb-3">
+<label>Username</label>
+<input type="text" class="form-control" placeholder="Enter username">
+</div>
+
+<div class="mb-3">
+<label>Password</label>
+
+<div class="input-group">
+<input type="password" id="regPass" class="form-control" placeholder="Enter password">
+<span class="input-group-text" onclick="togglePassword('regPass')">
+<i class="bi bi-eye"></i>
+</span>
+</div>
+
+<small id="strength"></small>
+
+</div>
+
+<button class="btn btn-custom w-100 mb-2">Register</button>
+
+<div class="text-center">
+<a href="login.html">Already have account?</a>
+</div>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+
+<script>
+document.getElementById("regPass").addEventListener("input", function() {
+let val = this.value;
+let strength = document.getElementById("strength");
+
+if(val.length < 5){
+    strength.innerText = "Weak password";
+    strength.style.color = "red";
+}
+else if(val.length < 8){
+    strength.innerText = "Medium password";
+    strength.style.color = "orange";
+}
+else{
+    strength.innerText = "Strong password";
+    strength.style.color = "green";
+}
+});
+</script>
+
+</body>
+</html>
