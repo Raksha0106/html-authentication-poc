@@ -1,18 +1,9 @@
-# HTML Authentication System POC
+Technologies Used
+- HTML
+- CSS
+- JavaScript
 
-This project is a simple HTML-based authentication system created as part of an assignment.
-
-## Pages Included
-- Login Page
-- Registration Page
-- Forgot Password Page
-- Reset Password Page
-- Dashboard Page
-
-## Technologies Used
-- HTML only
-
-## Notes
-- This project uses anchor tags for page redirection.
-- No CSS or JavaScript is used.
+Notes
+- This project uses CSS for styling.
+- JavaScript is used for password toggle and validation.
 - This is a front-end POC only.
